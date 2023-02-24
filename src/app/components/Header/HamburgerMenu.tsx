@@ -8,8 +8,8 @@ export const HamburgerMenu = () => {
     console.log(navBarState)
 
   return (
-    <div className=''>
-      <Hamburger toggled={navBarState} toggle={() => onHandleNavBar(!navBarState)} size={22}/>
+    <div className='md:hidden block'>
+      <Hamburger toggled={navBarState} toggle={() => onHandleNavBar(!navBarState)} size={26}/>
     </div>
   )
 }

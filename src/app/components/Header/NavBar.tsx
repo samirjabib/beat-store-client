@@ -5,7 +5,7 @@ export const NavBar = () => {
 
 
   return (
-    <ul className="flex flex-row gap-4">
+    <ul className=" flex-row gap-4 font-sans hidden md:flex">
         <li>
             Shop
         </li>
