@@ -8,6 +8,8 @@ export const HamburgerMenu = () => {
     console.log(navBarState)
 
   return (
-    <Hamburger toggled={navBarState} toggle={() => onHandleNavBar(!navBarState)} />
+    <div className=''>
+      <Hamburger toggled={navBarState} toggle={() => onHandleNavBar(!navBarState)} size={22}/>
+    </div>
   )
 }
