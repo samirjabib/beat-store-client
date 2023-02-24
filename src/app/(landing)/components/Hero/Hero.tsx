@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="bg-black h-[70vh] relative flex  justify-center">
+    <div className="bg-black h-[70vh] relative flex  justify-center items-center italic ">
       <div className="absolute top-8 flex flex-col md:flex-row gap-4 w-full items-center justify-center">
         <Image
           src={productHero}
@@ -12,7 +12,7 @@ export const Hero = () => {
           width={250}
           className="object-contain border-rounded block  shadow-md shadow-orange-500 rounded-md"
         />
-        <div className="w-full max-w-sm self-start">
+        <div className="w-full max-w-sm self-start justify-self-center  mx-auto md:mx-0 p-4 relative">
           <span className="text-gray-700 bg-white  mt-7 block  shadow-sm shadow-white font-bold text-xl italic  w-auto  text-center animate-bounce">
             NEW BEATS PACK!
           </span>
@@ -22,9 +22,10 @@ export const Hero = () => {
           <span className="text-orange-500 uppercase  block font-semibold">
             Trap
           </span>
-          <p className="text-white font-extralight font-sans text-sm">
-            Este paquete contiene 6 beats exclusivos{" "}
+          <p className="text-gray-200 font-extralight font-sans text-sm">
+            Este paquete contiene 12 beats exclusivos con sonido tipo Anuel AA, Eladio Carrion, Lil Baby, Duki, Almithy, Blessed, Pirlo420, incluye STEMS, WAV, MP3.
           </p>
+          <span className="text-gray-100 text-xs  self-end font-extraligh absolute right-6 mt-2 cursor-pointer underline">Revisar Licencias</span>
           <div className="mt-20 flex flex-row gap-x-4 cursor-pointer">
             <button className="bg-red-600 transition-all hover:bg-red-800 text-white px-5 py-2 rounded-full uppercase italic text-sm shadow-[0_9px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 ">
               Comprar Ahora
